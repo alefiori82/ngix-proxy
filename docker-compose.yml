@@ -3,7 +3,8 @@ version: '3'
 services:
 
   dockergen:
-    image: jwilder/nginx-proxy:alpine
+    build: ./
+    #image: jwilder/nginx-proxy:alpine
     container_name: nginx-proxy
     ports:
       - "80:80"
